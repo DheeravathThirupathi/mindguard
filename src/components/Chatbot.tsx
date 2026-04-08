@@ -55,6 +55,7 @@ const Chatbot: React.FC = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input }),
       });
+     
 
       if (!res.ok) throw new Error("Backend error");
 

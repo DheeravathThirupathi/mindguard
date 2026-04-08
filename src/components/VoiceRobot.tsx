@@ -425,7 +425,12 @@ const VoiceRobot: React.FC<VoiceRobotProps> = ({ theme = 'default' }) => {
       setError(null);
       
       // 1. Get analysis from backend (sentiment, intent, logging)
-      const analysisResponse = await fetch('http://localhost:3000/api/chat', {
+      // const analysisResponse = await fetch('http://localhost:3000/api/chat', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify({ message: text }),
+      // });
+       const analysisResponse = await fetch('https://mindguard.onrender.com/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text }),

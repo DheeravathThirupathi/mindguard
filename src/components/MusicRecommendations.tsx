@@ -30,7 +30,11 @@ const MusicRecommendations: React.FC<MusicRecommendationsProps> = ({ emotion }) 
       setError(null);
 
       try {
-        const res = await fetch(
+        // const res = await fetch(
+        //   `/api/recommend-music?emotion=${encodeURIComponent(emotion)}`
+        // );
+
+         const res = await fetch(
           `/api/recommend-music?emotion=${encodeURIComponent(emotion)}`
         );
 
