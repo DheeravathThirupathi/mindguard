@@ -20,7 +20,7 @@ const Developers: React.FC<DeveloperProps> = ({ onBack, theme = 'default' }) => 
       color: "bg-indigo-500"
     },
     {
-      name: "B. Nithin",
+      name: "R. Nithin",
       role: "Machine Learning Developer",
       image: "https://picsum.photos/seed/dev2/400/400",
       description: "BTech Final Year Electronics and Communication Engineering student at RGUKT Basar. Responsible for developing and optimizing the facial emotion detection model, performing stress analysis, and supporting AI model integration for the Stress Relief Chatbot System.",
