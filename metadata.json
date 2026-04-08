@@ -1,0 +1,5 @@
+{
+  "name": "Stress & Emotion Detection Hub",
+  "description": "A full-stack AI application that detects emotions via webcam, calculates stress levels, recommends Spotify music, provides an NLP-based support chatbot, and features a 3D voice-interactive wellness robot.",
+  "requestFramePermissions": ["camera", "microphone"]
+}
