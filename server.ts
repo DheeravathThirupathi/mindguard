@@ -51,7 +51,11 @@ app.use(cors({
   methods: ["GET", "POST"],
   credentials: true
 }));
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
+});
 app.options("*", cors());
 
 app.use(express.json());
